@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qa+nx+oy^s2x=h!yiut$d_-2@7_03pr%m9iriez433%%tv3oes
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tsitulskiy.pythonanywhere.com']
 
 
 # Application definition
@@ -116,7 +116,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+MEDIA_ROOT = '/home/tsitulskiy/shop-demo-heroku/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = '/home/tsitulskiy/shop-demo-heroku/static'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
